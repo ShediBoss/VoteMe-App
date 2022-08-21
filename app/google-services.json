@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "690945693497",
+    "project_id": "voteme-bca69",
+    "storage_bucket": "voteme-bca69.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690945693497:android:93940677848382babb7ae8",
+        "android_client_info": {
+          "package_name": "com.example.voteme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "690945693497-la6t759qfch367etnrsbpkumc8t5mk3a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTvVotCc97F9qz1zh044R7Wiiqo8t5dC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "690945693497-la6t759qfch367etnrsbpkumc8t5mk3a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

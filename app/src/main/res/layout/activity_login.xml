@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_animation"
+    android:id="@+id/bg_layout"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/backCard"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/back_arrow"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/loginpage"
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="30dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/rugerBg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/voteme_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            app:boxBackgroundColor="@color/login_gray"
+            android:hint="Email"
+            app:hintTextColor="@color/ruger_purple"
+            android:gravity="center"
+            app:boxStrokeColor="@color/ruger_purple"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginHorizontal="25dp"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:textColor="@color/ruger_purple"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_password"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="180dp"
+            app:boxBackgroundColor="@color/login_gray"
+            android:hint="Password"
+            android:gravity="center"
+            app:hintTextColor="@color/ruger_purple"
+            app:errorTextColor="@color/gray"
+            app:endIconTint="@color/gray"
+            app:endIconMode="password_toggle"
+            app:boxStrokeColor="@color/ruger_purple"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusTopStart="20dp"
+            android:layout_marginHorizontal="25dp"
+            app:layout_constraintTop_toBottomOf="@id/input_email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_input"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/login_btn"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:text="login"
+            android:textAllCaps="true"
+            android:layout_marginTop="270dp"
+            android:layout_marginHorizontal="25dp"/>
+
+        <TextView
+            android:id="@+id/regnow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Click to register here"
+            android:layout_marginTop="330dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@color/gradient_center"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
